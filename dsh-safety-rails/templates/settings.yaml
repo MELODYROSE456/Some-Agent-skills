@@ -1,0 +1,10 @@
+# 放到 ~/.dsh/settings.yaml
+# 本示例只保留安全护栏相关配置；其余字段（模型路由等）请按需保留你的个人配置。
+#
+# permission.defaultPreset 取值：
+#   - danger-full-access : 系统从不拦截（不建议用于"先确认"场景）
+#   - workspace-write    : 写文件时系统强制弹窗批准（推荐！这就是硬层）
+#   - read-only          : 只读（最严格，连写工作区也拦截）
+
+permission:
+  defaultPreset: workspace-write
